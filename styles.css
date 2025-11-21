@@ -1,0 +1,121 @@
+/* styles.css */
+
+/* Brand colours from Ontario Tech University */
+:root {
+  --future-blue: #003C71;     /* Primary dark blue */   :contentReference[oaicite:1]{index=1}
+  --simcoe-blue: #0077CA;     /* Lighter blue */        :contentReference[oaicite:2]{index=2}
+  --tech-tangerine: #E75D2A;  /* Accent orange */        :contentReference[oaicite:3]{index=3}
+
+  --warm-grey: #ACA39A;
+  --cool-grey: #A7A8AA;
+  --dark-grey: #5B6770;
+  --white: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Ubuntu, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-grey);
+  background-color: var(--white);
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.site-header {
+  background-color: var(--future-blue);
+  color: var(--white);
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h1 {
+  font-size: 1.8rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background-color: var(--simcoe-blue);
+  color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.about, .trips, .contact {
+  margin: 2rem 0;
+}
+
+.about h2,
+.trips h2,
+.contact h2 {
+  color: var(--future-blue);
+  margin-bottom: 1rem;
+}
+
+.trip-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.trip {
+  border: 2px solid var(--simcoe-blue);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.trip h3 {
+  margin-bottom: 0.5rem;
+  color: var(--future-blue);
+}
+
+.trip p {
+  color: var(--dark-grey);
+}
+
+.contact a {
+  color: var(--tech-tangerine);
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.site-footer {
+  border-top: 1px solid var(--cool-grey);
+  padding: 1rem 0;
+  text-align: center;
+  color: var(--cool-grey);
+  font-size: 0.9rem;
+}

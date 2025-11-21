@@ -21,6 +21,7 @@ jobs:
         source: "."
         target: "~/app"
 
+    # NOT NEEDED AS SITE IS STATIC
     # - name: Restart App
     #   uses: appleboy/ssh-action@v1.0.3
     #   with:
