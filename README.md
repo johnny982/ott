@@ -1,11 +1,9 @@
-<h1 align="center">
-    <span>Ontario Tech Trips Demo</span>
-</h1>
+<div align="center">
 
-<p align="center">
-    <span>Demo of CI/CD pipeline with GitHub Actions and AWS EC2 for Ontario Tech Trips' cloud migration</span>
-</p>
+<h1>Ontario Tech Trips: Demo</h1>
 
-<p align="center">
-    <span>INFR 2670U: Introduction to Cloud Services - Final Project</span>
-</p>
+<p>Demo of CI/CD pipeline with GitHub Actions and AWS EC2 for Ontario Tech Trips' cloud migration.</p>
+
+<sub><i>INFR 2670U: Introduction to Cloud Services - Final Project</i></sub>
+
+</div>
