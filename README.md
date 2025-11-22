@@ -6,6 +6,6 @@
     <span>Demo of CI/CD pipeline with GitHub Actions and AWS EC2 for Ontario Tech Trips' cloud migration</span>
 </p>
 
-<p align="center" style="font-size: 0.85em; color: #777;">
+<p align="center">
     <span>INFR 2670U: Introduction to Cloud Services - Final Project</span>
 </p>
