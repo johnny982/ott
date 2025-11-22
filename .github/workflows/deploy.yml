@@ -19,16 +19,15 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         source: "."
-        target: "~/var/www/html"
+        target: "~/app"
 
-    # NOT NEEDED AS SITE IS STATIC
-    # - name: Restart App
-    #   uses: appleboy/ssh-action@v1.0.3
-    #   with:
-    #     host: ${{ secrets.EC2_HOST }}
-    #     username: ${{ secrets.EC2_USER }}
-    #     key: ${{ secrets.EC2_SSH_KEY }}
-    #     script: |
-    #       cd ~/app
-    #       npm install
-    #       pm2 restart all || pm2 start app.js
+    - name: Restart App
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          cd ~/app
+          npm install
+          pm2 restart all || pm2 start app.js
